@@ -21,7 +21,7 @@ def calculate():
 window = tk.Tk()
 window.title("casio")
 
-
+r
 entry = tk.Entry(window, width=16, font=('Arial', 16), justify='right')
 entry.grid(row=0, column=0, columnspan=4)
 
