@@ -1,4 +1,6 @@
 import tkinter as tk
+from tkinter import Button
+
 
 def add_task():
     task = entry.get()
@@ -17,7 +19,8 @@ entry = tk.Entry(root, width=60)
 entry.pack(pady=30)
 
 
-add_button = tk.Button(root, text="Add Task", command=add_task)
+# add_button = tk.Button(root, text="Add Task", command=add_task)
+add_button: Button = tk.Button(root, text="Add Task", command=add_task)
 add_button.pack(side=tk.LEFT, padx=30)
 remove_button = tk.Button(root, text="Remove Task", command=remove_task)
 remove_button.pack(side=tk.LEFT, padx=30)
